@@ -1,3 +1,9 @@
+/*
+Tu trabajo es escribir un programa que lea números enteros de
+la entrada estándar, los clasifica en orden ascendente y
+luego imprime los números ordenados, uno por línea.
+*/
+
 #include <iostream>
 
 using namespace std;

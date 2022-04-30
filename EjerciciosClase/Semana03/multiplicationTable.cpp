@@ -1,3 +1,7 @@
+/*
+Tabla de multiplicación. Bucles
+*/
+
 #include <iostream>
 
 using namespace std;

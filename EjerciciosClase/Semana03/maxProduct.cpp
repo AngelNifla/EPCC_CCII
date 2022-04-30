@@ -1,13 +1,28 @@
+/*
+Producto máximo de dos números en una secuencia
+• Dada una secuencia de n números no negativos y mayores que cero.
+• El objetivo es encontrar el mayor número que se pueda obtener
+  multiplicando dos números de esta secuencia.
+• Usando un bucle for
+*/
+
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    int num_total;
+    int num_total;  //variable para los n numeros
 
     cout<<"¿Cuantos numeros va a ingresar?:  ";
     cin>>num_total;
+
+    while (num_total<=0)    //bucle para que se ingrese solo numeros positivos para n
+    {
+        cout<<"-> El numero de valores a INGRESAR debe ser positivo:  ";
+        cin>>num_total;
+    }
+    
 
     int num[num_total];
 
@@ -16,7 +31,7 @@ int main()
         cout<<i+1<<". ingrese valor :  ";
         cin>>num[i];
 
-        if(num[i]<=0)       //verificar si la entrada es positiva
+        while(num[i]<=0)       //verificar si la entrada es positiva
         {
             cout<<"\t! ingrese solo valores positivos.\n\t";
             cout<<i+1<<". ingrese nuevamente el valor :  ";
